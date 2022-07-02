@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random quote machine</title>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+/>
+  <style>
+    html,body {
+      font-family:'Open Sans', Arial, monospace;
+      margin: 0;
+      width:100%;
+      height:100%;
+    }
+
+    #top {
+      background: black;
+      height:auto;
+      font-size: 1.5em;
+      font-weight:bold;
+      margin-bottom:40px;
+      color: white;
+    }
+    #quote-box {
+      background: white;
+      border-radius: 5px;
+      margin: 0 auto;
+      max-width: 50%; 
+      padding:40px;
+      height: auto;
+    }
+    #text {
+      font-size:1.5em;
+      margin-bottom: 10px;
+    }
+    button, a {
+      border:0;
+      padding:5px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      text-align:center;
+      font-size: 1.2em;
+      padding-top: 8px;
+
+    }
+    #tweet-quote {
+      width:40px;
+      height:30px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Random Quote Machine</h1>
+      <div id="quote-box">
+      <div class="inner">
+        <div id="text">
+        </div>
+        <div class="row">
+          <div id="author">
+          </div>        
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button id="new-quote" class="btn btn-primary btn-lg px-4 gap-3" onclick="newQuote()">
+            New quote
+          </button>
+          <button class="btn btn-outline-secondary btn-lg px-4">
+            <a id="tweet-quote" class="btn" href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" target="_blank"><i class="fa fa-twitter"></i></a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/babel">
+   
+   function getQuote() {
+   const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'd30643a78bmsha62e5e4775eb3f3p1d02a8jsn8a57e393947d',
+		'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+	}
+};
+
+
+
+fetch('https://quotes15.p.rapidapi.com/quotes/random/', options)
+	.then(response => response.json())
+	.then(data => {
+    let quote = {
+      'quote' : data.content,
+      'author' : data.originator.name
+    }
+    document.querySelector('#text').innerHTML = '<p class="lead mb-4">' + '"' + quote.quote + '"' + '</p>';
+    document.querySelector('#author').innerHTML = ' - ' + quote.author;
+  })
+  }
+
+  function newQuote() {
+      getQuote();
+  }
+  document.onload = getQuote();
+  </script>
+
+
+</body>
+</html>
