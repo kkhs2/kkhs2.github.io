@@ -1,0 +1,295 @@
+/*londis_myAllocations*/
+
+main#myAllocations {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+    main#myAllocations .container {
+        margin-top: 15px;
+        max-width: 80%;
+    }
+
+    main#myAllocations .row_titulo {
+        background-color: #D4E2FF;
+    }
+
+    main#myAllocations .titulo {
+        color: #2356AA;
+        width: 100%;
+        margin-top: 8.5px;
+        height: 30px;
+        padding-left: 10px;
+        text-align: left;
+        float: right;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    main#myAllocations .btn {
+        background-color: #F24B71;
+        color: white;
+        border-radius: 0rem;
+        margin-top: 2.5px;
+    }
+
+    main#myAllocations .col-fechas {
+        max-width: 26%;
+    }
+
+    main#myAllocations .buyIn {
+        font-weight: bold;
+        padding-top: 40px;
+    }
+
+    main#myAllocations .negrita {
+        font-weight: bold;
+    }
+
+    main#myAllocations .col-btn {
+        text-align: right;
+    }
+
+    main#myAllocations .colorp {
+        color: #25417D;
+    }
+
+    main#myAllocations .nav {
+        padding: 0em !important;
+    }
+
+@media (max-width: 1500px) {
+    main#myAllocations .container {
+        max-width: 100% !important;
+    }
+
+    main#myAllocations .col-fechas {
+        max-width: 24%;
+    }
+}
+
+@media (max-width: 1400px) {
+    main#myAllocations .container {
+        max-width: 100% !important;
+    }
+
+    main#myAllocations .col-fechas {
+        max-width: 26%;
+    }
+}
+
+@media (max-width: 1300px) {
+    main#myAllocations .col-fechas {
+        max-width: 26%;
+    }
+}
+
+@media (max-width: 1100px) {
+    main#myAllocations .col-fechas {
+        max-width: 31%;
+    }
+
+    main#myAllocations .col-descripcion {
+        height: 7.6em;
+    }
+}
+
+@media (max-width: 1050px) {
+    main#myAllocations .col-fechas {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main#myAllocations .col-fechas {
+        max-width: 27%;
+    }
+}
+
+@media (max-width: 1000px) {
+    main#myAllocations .buyIn {
+        padding-top: 20px;
+    }
+
+    main#myAllocations .col-fechas {
+        max-width: 32%;
+    }
+
+    main#myAllocations .col-descripcion {
+        max-width: 68% !important;
+        height: 9em;
+    }
+}
+
+@media (max-width: 768px) {
+    html[data-useragent*='Edge/17.17134'] main#myAllocations .col-fechas {
+        font-size: 13px;
+    }
+
+    html[data-useragent*='Edge/17.17134'] main#myAllocations .col-descripcion {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    main#myAllocations .btn {
+        width: 100%;
+    }
+
+    main#myAllocations .vertical-menu {
+        width: 100%;
+    }
+
+    main#myAllocations .allocationsHeaderRow {
+        border-right: solid 5px #D4E2FF;
+        height: 375px;
+        border-left: solid 5px #D4E2FF;
+    }
+
+    main#myAllocations .col {
+        flex-basis: auto !important;
+    }
+
+    main#myAllocations .buyIn {
+        padding-top: 0px;
+    }
+
+    main#myAllocations .col-btn {
+        text-align: center;
+    }
+
+    main#myAllocations .nav {
+        flex-wrap: nowrap;
+    }
+
+    .vertical-menu {
+        width: -webkit-fill-available;
+        height: 3em;
+    }
+
+    main#myAllocations .tab-content {
+        width: 100%;
+    }
+
+    main#myAllocations .col-fechas {
+        max-width: 46%;
+        padding-top: 15px;
+    }
+
+    main#myAllocations .col-descripcion {
+        max-width: 100% !important;
+        height: 7.2em;
+    }
+
+    html[data-useragent*='Edge/17.17134'] main#myAllocations .col-fechas {
+        font-size: 15px;
+    }
+
+    html[data-useragent*='Edge/17.17134'] main#myAllocations .col-descripcion {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    main#myAllocations .col-fechas {
+        max-width: 100%;
+        padding-top: 15px;
+    }
+
+    main#myAllocations .vertical-menu {
+        width: 100%;
+    }
+
+    main#myAllocations .col-descripcion {
+        height: 7.5em;
+    }
+}
+
+@media (max-width: 414px) {
+    main#myAllocations .vertical-menu a {
+        padding: 19.5px;
+    }
+
+    main#myAllocations .col-descripcion {
+        height: 8.5em;
+        font-size: 14px
+    }
+}
+
+@media (max-width: 375px) {
+    main#myAllocations .col-descripcion {
+        height: 9em;
+        font-size: 13px
+    }
+
+    main#myAllocations .vertical-menu a {
+        padding: 22.5px;
+    }
+
+    html[data-useragent*='Edge/17.17134'] main#myAllocations .col-descripcion {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    main#myAllocations .vertical-menu a {
+        padding: 20.5px;
+    }
+}
+
+@media (max-width: 350px) {
+    main#myAllocations .titulo {
+        font-size: 19px;
+    }
+
+    main#myAllocations .vertical-menu a {
+        padding: 15.5px;
+    }
+}
+/*IE11 LONDIS_MyAllocationsPreOrderedWeekDeal.html*/
+html[data-useragent*='rv:11.0'] main#myAllocations .vertical-menu li {
+    flex: 1 1 auto;
+}
+
+    html[data-useragent*='rv:11.0'] main#myAllocations .vertical-menu li a {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+@media(min-width: 768px) {
+    main#myAllocations .allocationsHeaderRow {
+        border-right: solid 20px #D4E2FF;
+        max-width: 100%;
+        height: auto;
+    }
+
+    main#myAllocations .vertical-menu {
+        width: 10%;
+        background-color: #D4E2FF;
+    }
+
+    main#myAllocations .h6 {
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    main#myAllocations .headerTab {
+        max-width: 100%;
+        font-size: 14px;
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .allocationsHeaderRow .tab-content {
+        width: 90%;
+        position: relative;
+    }
+}
+
+
+.my-allocation-londis .my-allocations-button {
+    height: 30px;
+}
