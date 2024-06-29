@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booker Wholesale UK | Foodservice | Cash &amp; Carry | Booker.co.uk</title>
+    <meta name="description" content="Booker is a market leading wholesale provider in the UK. As a foodservice wholesaler we serve caterers, retailers and other businesses from over 170 nationwide" />
+    <meta name="keywords" content="booker wholesale,wholesale uk,wholesaler,foodservice,food wholesaler" />
+    <meta name="robots" content="noindex, nofollow" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.booker.co.uk/images/favicon.ico" />
+    <!-- Styles -->
+    <link href="https://www.booker.co.uk/bundles/css?v=aOWVYmxHytJpv983HLrHB4UQSThXGXzBi-hPkwNmCCs1" rel="stylesheet"/>
+     
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <script>
+    const branches = [
+    {
+      id: 503,
+      name: 'Kettering',
+      distance: '2.5 Miles',
+      isOpened: true,
+      open: 'Monday 8:30AM',
+      close: '3:00PM',
+    },
+{
+  id: 266,
+  name: 'Northampton',
+  distance: '10.0 Miles',
+  isOpened: false,
+  open: 'Monday 10:00AM',
+  close: '4:00PM'
+},
+{
+  id: 316,
+  name: 'Peterborough',
+  distance: '30.5 Miles',
+  isOpened: true,
+  open: 'Tuesday 9:00AM',
+  close: '5:00PM'
+},
+{
+  id: 329,
+  name: 'Luton',
+  distance: '25.0 Miles',
+  isOpened: true,
+  open: 'Monday 9:00AM',
+  close: '6:00PM'
+},
+{
+  id: 533,
+  name: 'Bedford',
+  distance: '21.0 Miles',
+  isOpened: false,
+  open: 'Monday 7:45AM',
+  close: '7:00PM'
+},
+];
+
+const products = [
+  {
+    midascode: 286632,
+    description: 'Just Cookit BBQ Pork Rack of Ribs 450g',
+    volume: 'Case of 12',
+    price: 59.88,
+    type: 'Chilled',
+    stock: [
+      {
+        id: 316,
+        quantity: 50
+      },
+      {
+        id: 329,
+        quantity: 20
+      },
+      {
+        id: 503,
+        quantity: 3
+      },
+      {
+        id: 266,
+        quantity: 100
+      },
+      {
+        id: 533,
+        quantity: 0
+      }
+    ]
+  },
+  {
+    midascode: 249725,
+    description: 'Heineken 12 x 330ml',
+    volume: 'Case of 1',
+    price: 9.99,
+    type: 'Ambient',
+    stock: [
+      {
+        id: 316,
+        quantity: 24
+      },
+      {
+        id: 329,
+        quantity: 55
+      },
+      {
+        id: 503,
+        quantity: 4
+      },
+      {
+        id: 266,
+        quantity: 0
+      },
+      {
+        id: 533,
+        quantity: 33
+      }
+    ]
+  },
+  {
+    midascode: 126911,
+    description: 'Cravendale Semi Skimmed 2L',
+    volume: 'Case of 6',
+    price: 12.09,
+    type: 'Chilled',
+    stock: [
+      {
+        id: 316,
+        quantity: 0
+      },
+      {
+        id: 329,
+        quantity: 0
+      },
+      {
+        id: 503,
+        quantity: 2
+      },
+      {
+        id: 266,
+        quantity: 33
+      },
+      {
+        id: 533,
+        quantity: 1
+      }
+    ]
+  },
+  {
+    midascode: 244174,
+    description: 'Cornetto Ice Cream Cone Classico 120 ml',
+    volume: 'Case of 24',
+    price: 22.29,
+    type: 'Frozen',
+    stock: [
+      {
+        id: 316,
+        quantity: 4
+      },
+      {
+        id: 329,
+        quantity: 0
+      },
+      {
+        id: 503,
+        quantity: 33
+      },
+      {
+        id: 266,
+        quantity: 0
+      },
+      {
+        id: 533,
+        quantity: 55
+      }
+    ]
+  },
+  {
+    midascode: 260506,
+    description: 'HARIBO Goldbears 160g',
+    volume: 'Case of 12',
+    price: 12.15,
+    type: 'Ambient',
+    stock: [
+      {
+        id: 316,
+        quantity: 22
+      },
+      {
+        id: 329,
+        quantity: 22
+      },
+      {
+        id: 503,
+        quantity: 2
+      },
+      {
+        id: 266,
+        quantity: 28
+      },
+      {
+        id: 533,
+        quantity: 44
+      }
+    ]
+  },
+  {
+    midascode: 218322,
+    description: '19 Crimes Red Wine 750ml',
+    volume: 'Case of 6',
+    price: 37.49,
+    type: 'Ambient',
+    stock: [
+      {
+        id: 316,
+        quantity: 9
+      },
+      {
+        id: 329,
+        quantity: 100
+      },
+      {
+        id: 503,
+        quantity: 200
+      },
+      {
+        id: 266,
+        quantity: 2
+      },
+      {
+        id: 533,
+        quantity: 4
+      }
+    ]
+  },
+  {
+    midascode: 332071,
+    description: 'Blakemans Supreme Sausage Thick Pork 2kg',
+    volume: 'Case of 4',
+    price: 35.96,
+    type: 'Chilled',
+    stock: [
+      {
+        id: 316,
+        quantity: 4
+      },
+      {
+        id: 329,
+        quantity: 69
+      },
+      {
+        id: 503,
+        quantity: 20
+      },
+      {
+        id: 266,
+        quantity: 3
+      },
+      {
+        id: 533,
+        quantity: 4
+      }
+    ]
+  }
+];
+
+const filters = [
+  {
+    status: 'In Stock'
+  },
+  {
+    status: 'Low Stock',
+  },
+  {
+    status: 'Out of Stock'
+  },
+  {
+    status: 'Open'
+  },
+  {
+    status: 'Closed'
+  },
+  {
+    status: 'Retail'
+  },
+  {
+    status: 'Catering'
+  }
+];
+    </script>
+    <style>
+      * {
+        font-family: 'Lato', Arial, Helvetica, sans-serif sans-serif;
+        font-size: 0.9rem;
+      }
+
+      .booker {
+        background: #2356AA;
+      }
+
+      body {
+        height: 100%;
+      }
+
+      a {
+        color: #2356AA;
+      }
+
+      #no-stock-menu {
+        width: 100%;
+      }
+
+      .btn, .btn:hover {
+        background-color: #00BDF7;
+        color: white;
+      }
+
+      .lozenge {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      @media (max-width: 576px) {
+        #no-stock-menu {
+          width: 100%;
+        }
+      }
+
+
+    </style>
+</head>
+<body>
+  <div class="container no-stock-menu booker text-white h-100 p-3" id="no-stock-menu">
+    
+  </div>
+<script>
+  document.getElementById('no-stock-menu').innerHTML = `
+    <div class="row">
+      <div class="col-10">
+        <p>Branches with Stock Available for Collection</p>
+        <p>${products[0].description} (${products[0].volume})</p>
+      </div>
+      <div class="col-2">
+        <button type="button" class="close text-white" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 p-0">
+        <input type="text" class="form-control" placeholder="Enter postcode or location">
+      </div>
+      <div class="col-4 p-0">
+        <a href="#" class="btn bg-primary d-block">Find Branches</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row filters">
+        <div class="col-12">
+          
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row availableFilters">
+      
+      </div>
+    </div>
+    <div class="container p-0" id="branches">
+      ${products[0].stock.map((product, key) => 
+        branches.map((branch) => product.id == branch.id ? `
+      <div class="row mt-2 p-3 text-dark bg-white">
+        <div class="col-12 p-0">
+          <div class="row text-left">
+        <div class="col-8 p-0">
+          <a href="#" class="font-weight-bold">BOOKER ${branch.name.toUpperCase()}</a>
+        </div>
+        <div class="col-4 text-center">
+          <p><b>${branch.distance}</b></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 p-0">${branch.isOpened ? `<span class="lozenge bg-success"></span> <b>Open</b> until ${branch.close}` : `<span class="lozenge bg-danger"></span> <b>Closed</b>. Opens ${branch.open} `}</div>
+        <div class="col-4">${product.quantity > 10 ? `<span class="bg-success d-block text-center text-white">IN STOCK</span>` : product.quantity > 0 && product.quantity <= 5 ? `<span class="bg-warning d-block text-center text-white">LOW STOCK</span>` : `<span class="bg-secondary d-block text-center text-white">NO STOCK</span>`}</div>
+      </div> 
+     </div> 
+    </div>    
+    ` : '').join("")).join("")}
+    <div class="row mt-2 mb-5">
+      <div class="col-12 p-0">
+        <a href="#" class="btn d-block p-3 w-100 bg-light text-dark">Show more branches</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 p-0">
+        <a href="#" class="btn d-block p-3 w-100 bg-primary">Close Menu</a>
+      </div>
+    </div>
+  `;
+  </script>
+</body>
+</html>
