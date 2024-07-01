@@ -1,0 +1,38 @@
+* {
+  font-family: 'Lato', Arial, Helvetica, sans-serif sans-serif;
+  font-size: 0.9rem;
+}
+
+.booker {
+  background: #2356AA;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  color: #2356AA;
+}
+
+#no-stock-menu {
+  width: 100%;
+}
+
+.btn, .btn:hover {
+  background-color: #00BDF7;
+  color: white;
+}
+
+.lozenge {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 576px) {
+  #no-stock-menu {
+    width: 100%;
+  }
+}
